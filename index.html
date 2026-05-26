@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sistema de armanezação de notas</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="titulo">Sis. de Notas</h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2 class="subtitulo">Turma 3°A.D.S.</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Nota 1° Tri.</th>
+							<th>Nota 2° Tri</th>
+							<th>nota 3° Tri</th>
+							<th>média</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-alunos">
+						<tr class="aluno" id="primeiro-aluno">
+							<td class="info-nome">Paulo</td>
+							<td class="info-1tri">100</td>
+							<td class="info-2tri">80</td>
+							<td class="info-3tri">67</td>
+							<td class="info-media">0</td>
+						</tr>
+
+						<tr class="aluno" id="segundo-aluno" >
+							<td class="info-nome">João</td>
+							<td class="info-1tri">80</td>
+							<td class="info-2tri">74</td>
+							<td class="info-3tri">40</td>
+							<td class="info-media">0</td>
+						</tr>
+
+						<tr class="aluno" id="terceiro-aluno" >
+							<td class="info-nome">Erica</td>
+							<td class="info-1tri">54</td>
+							<td class="info-2tri">78</td>
+							<td class="info-3tri">90</td>
+							<td class="info-media">0</td>
+						</tr>
+
+						<tr class="aluno" id="quarto-aluno">
+							<td class="info-nome">Douglas</td>
+							<td class="info-1tri">85</td>
+							<td class="info-2tri">94</td>
+							<td class="info-3tri">24</td>
+							<td class="info-media">0</td>
+						</tr>
+
+						<tr class="aluno" id="quinto-aluno" >
+							<td class="info-nome">Tatiana</td>
+							<td class="info-1tri">46</td>
+							<td class="info-2tri">58</td>
+							<td class="info-3tri">19</td>
+							<td class="info-media">0</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</section>
+			<section class="container">
+				<h2 id="titulo-form">Adicionar novo aluno</h2>
+				<form id="form-adiciona">
+					<div class="grupo">
+						<label for="nome">Nome:</label>
+						<input id="nome" name="nome" type="text" placeholder="digite o nome do seu aluno" class="campo">
+					</div>
+					<div class="grupo">
+						<label for="peso">nota 1° tri:</label>
+						<input id="peso" name="peso" type="text" placeholder="digite a nota do 1° tri do seu aluno" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="altura">nota 2° tri:</label>
+						<input id="altura" name="altura" type="text" placeholder="digite a nota do 2° tri do seu aluno" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="gordura">nota 3° tri:</label>
+						<input id="gordura" type="text" placeholder="digite a nota do 3° tri do seu aluno" class="campo campo-medio">
+					</div>
+			
+					<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+				</form>
+			</section>
+		</main>
+		<script src="Calcular-IMC.js"> </script> 
+		<script src="formulário.js"> </script> 
+	</body>
+</html>
